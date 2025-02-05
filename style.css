@@ -13,6 +13,14 @@ h1{
     color: white;
     font-family: "Josefin Sans", serif;
 }
+
+#con1 > div{
+    margin-bottom: 20px;
+}
+
+
+
+
 :placeholder-shown{
     color: white;
     font-family: "Fredoka", serif;
