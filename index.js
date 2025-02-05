@@ -46,7 +46,11 @@ phoneNumber.addEventListener("change", (e) =>{
         if (!phoneRegex.test(phoneNumber)) {
     console.log("Invalid phone number");
 }
-   
+    //checks if the number is a valid kenyan number or not
+    const kenyanPhoneRegex = /^(?:\+254|254|0)[17]\d{8}$/;
+    if (!kenyanPhoneRegex.test(phoneNumber)) {
+        alert("Invalid Kenyan phone number");
+    }
 
 
 })
