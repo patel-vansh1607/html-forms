@@ -13,6 +13,7 @@ h1{
     color: aliceblue;
     font-family: "Josefin Sans", serif;
 }
-label{
+:placeholder-shown{
     color: aliceblue;
+    font-family: "Fredoka", serif;
 }
