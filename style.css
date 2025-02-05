@@ -16,7 +16,13 @@ h1{
     align-items: center;
     font-family: "Josefin Sans", serif;
 }
-
+label[for="acceptTerms"]{
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: "Josefin Sans", serif;
+}
 #con1 > div {
     margin-bottom: 20px; 
     display: flex;
