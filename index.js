@@ -7,6 +7,7 @@ let details = {
     phoneNumber: '',
     password: '',
     confirmPassword: '',
+    acceptTerms: false
 }
 
 
@@ -55,6 +56,7 @@ confirmPassword.addEventListener("change", (e) =>{
 
 submitButton.addEventListener("click", (e) =>{
     console.log(details)
+    const { firstName, lastName, email, password, confirmPassword, acceptTerms} = details
+    console.log(firstName, lastName, email, password, confirmPassword, acceptTerms)
 })
-
 
