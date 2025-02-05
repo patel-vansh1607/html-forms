@@ -29,3 +29,10 @@ firstName.addEventListener("change", (e) =>{
     console.log(name)
 })
 
+const phoneNumber = document.getElementById("phoneNumber")
+firstName.addEventListener("change", (e) =>{
+    const name = e.target.value
+    console.log(name)
+})
+
+
