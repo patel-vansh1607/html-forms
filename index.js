@@ -10,41 +10,51 @@ let details = {
 }
 
 
+const submitButton = document.getElementById("submitButton")
 
 const firstName = document.getElementById("firstName")
-firstName.addEventListener("change", (e) =>{
-    const name = e.target.value
-    console.log(name)
-})
-
 const lastName = document.getElementById("lastName")
-firstName.addEventListener("change", (e) =>{
-    const name = e.target.value
-    console.log(name)
-})
-
 const email = document.getElementById("email")
-firstName.addEventListener("change", (e) =>{
-    const name = e.target.value
-    console.log(name)
-})
-
 const phoneNumber = document.getElementById("phoneNumber")
-firstName.addEventListener("change", (e) =>{
-    const name = e.target.value
-    console.log(name)
-})
-
 const password = document.getElementById("password")
+const confirmPassword = document.getElementById("confirmPassword")
+
 firstName.addEventListener("change", (e) =>{
     const name = e.target.value
-    console.log(name)
+    details.firstName = name
 })
 
-const confirmPassword = document.getElementById("confirmPassword")
-firstName.addEventListener("change", (e) =>{
-    const name = e.target.value
-    console.log(name)
+
+lastName.addEventListener("change", (e) =>{
+    const lastName = e.target.value
+    details.lastName = lastName
+})
+
+
+email.addEventListener("change", (e) =>{
+    const email = e.target.value
+    details.email = email
+})
+
+
+phoneNumber.addEventListener("change", (e) =>{
+    const phoneNumber = e.target.value
+    details.phoneNumber = phoneNumber
+})
+
+
+password.addEventListener("change", (e) =>{
+    const password = e.target.value
+    details.password = password
+})
+
+confirmPassword.addEventListener("change", (e) =>{
+    const confirmPassword = e.target.value
+    details.confirmPassword = confirmPassword
+})
+
+submitButton.addEventListener("click", (e) =>{
+    console.log(details)
 })
 
 
