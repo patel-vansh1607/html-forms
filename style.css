@@ -8,3 +8,7 @@ body{
     height: 100vh ;
     margin: 0;
 }
+h1{
+    color: aliceblue;
+    font-family: "Josefin Sans", serif;
+}
