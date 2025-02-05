@@ -10,10 +10,28 @@ body {
 }
 
 h1{
-    color: aliceblue;
+    color: white;
     font-family: "Josefin Sans", serif;
 }
 :placeholder-shown{
-    color: aliceblue;
+    color: white;
     font-family: "Fredoka", serif;
 }
+
+input[type = "text"]{
+    color: aliceblue;
+    font-family: "Fredoka", serif;
+    
+}
+
+input{
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent */
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+
