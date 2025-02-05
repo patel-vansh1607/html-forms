@@ -41,6 +41,7 @@ email.addEventListener("change", (e) =>{
 phoneNumber.addEventListener("change", (e) =>{
     const phoneNumber = e.target.value
     details.phoneNumber = phoneNumber
+
     //checks if phone number is valid or not
     const phoneRegex = /^\d{10}$/;
         if (!phoneRegex.test(phoneNumber)) {
@@ -49,7 +50,7 @@ phoneNumber.addEventListener("change", (e) =>{
     //checks if the number is a valid kenyan number or not
     const kenyanPhoneRegex = /^(?:\+254|254|0)[17]\d{8}$/;
     if (kenyanPhoneRegex.test(phoneNumber)) {
-        alert("Valid Kenyan Number");
+        alert("Valid Kenyan Number"); 
      } else {alert("Invalid Kenyan phone number");}
         
     
