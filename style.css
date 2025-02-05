@@ -14,8 +14,12 @@ h1{
     font-family: "Josefin Sans", serif;
 }
 
-#con1 > div{
-    margin-bottom: 20px;
+#con1 > div {
+    margin-bottom: 20px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
 }
 
 
