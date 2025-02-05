@@ -35,4 +35,10 @@ firstName.addEventListener("change", (e) =>{
     console.log(name)
 })
 
+const password = document.getElementById("password")
+firstName.addEventListener("change", (e) =>{
+    const name = e.target.value
+    console.log(name)
+})
+
 
