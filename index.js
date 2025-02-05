@@ -16,3 +16,10 @@ firstName.addEventListener("change", (e) =>{
     const name = e.target.value
     console.log(name)
 })
+
+const lastName = document.getElementById("lastName")
+firstName.addEventListener("change", (e) =>{
+    const name = e.target.value
+    console.log(name)
+})
+
