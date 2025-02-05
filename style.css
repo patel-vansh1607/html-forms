@@ -26,7 +26,19 @@ label[for="acceptTerms"]{
 input[type="checkbox"] {
     width: 25px; 
     height: 25px;
+    cursor: pointer;
   }
+#submitButton{
+    font-family: "Josefin Sans", serif;
+    width: 300px;
+    height: 30px;
+    background-color: #348eb1b7;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    
+}
 #con1 > div {
     margin-bottom: 20px; 
     display: flex;
