@@ -23,6 +23,10 @@ label[for="acceptTerms"]{
     align-items: center;
     font-family: "Josefin Sans", serif;
 }
+input[type="checkbox"] {
+    width: 25px; 
+    height: 25px;
+  }
 #con1 > div {
     margin-bottom: 20px; 
     display: flex;
