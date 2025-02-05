@@ -23,3 +23,9 @@ firstName.addEventListener("change", (e) =>{
     console.log(name)
 })
 
+const email = document.getElementById("email")
+firstName.addEventListener("change", (e) =>{
+    const name = e.target.value
+    console.log(name)
+})
+
