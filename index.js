@@ -41,4 +41,10 @@ firstName.addEventListener("change", (e) =>{
     console.log(name)
 })
 
+const confirmPassword = document.getElementById("confirmPassword")
+firstName.addEventListener("change", (e) =>{
+    const name = e.target.value
+    console.log(name)
+})
+
 
