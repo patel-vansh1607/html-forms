@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-body{ 
-    background-image: url(./Images/bg-img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh ;
-    margin: 0;
+body {
+  background-image: url(./Images/bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  position: relative; /* Add this to position the overlay */
 }
+
 h1{
     color: aliceblue;
     font-family: "Josefin Sans", serif;
+}
+label{
+    color: aliceblue;
 }
