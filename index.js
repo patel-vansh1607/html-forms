@@ -68,9 +68,10 @@ confirmPassword.addEventListener("change", (e) =>{
     details.confirmPassword = confirmPassword
 })
 
-function validatePassword(str1, str2){
-    //confirm password and confirm password are the same
-    // return a boolean if passwrod match
+function validatePassword(password, confirmPassword){
+    if (password === confirmPassword ){
+        alert("Passwords Match | You're good to go  ~ True")
+    } else alert("PASSWORDS DON'T MATCH ~ False")
 
 }
 submitButton.addEventListener("click", (e) =>{
