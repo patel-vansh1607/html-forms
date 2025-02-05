@@ -41,8 +41,14 @@ email.addEventListener("change", (e) =>{
 phoneNumber.addEventListener("change", (e) =>{
     const phoneNumber = e.target.value
     details.phoneNumber = phoneNumber
-    // using regular expressions , validate if number is a kenyan number
-    // if its not using the alret function, notifythe user the number is not valid
+    //checks if phone number is valid or not
+    const phoneRegex = /^\d{10}$/;
+        if (!phoneRegex.test(phoneNumber)) {
+    console.log("Invalid phone number");
+}
+   
+
+
 })
 
 
