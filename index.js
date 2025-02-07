@@ -70,7 +70,7 @@ confirmPassword.addEventListener("change", (e) =>{
 })
 
 function validatePassword(password, confirmPassword){
-    if (password === confirmPassword ){
+    if ( password === confirmPassword  ){
         alert("Passwords Match | You're good to go  ~ True")
     } else alert("PASSWORDS DON'T MATCH ~ False")
 
@@ -81,6 +81,7 @@ submitButton.addEventListener("click", (e) =>{
     console.log(firstName, lastName, email, password, confirmPassword, acceptTerms)
 
     validatePassword(password, confirmPassword)
+    
 })
 
 
