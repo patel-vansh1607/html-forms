@@ -1,4 +1,4 @@
-const validatePassword = require("../validatePassword")
+const (validatePassword,validateNames) = require("../validatePassword")
 
 test("validate password works as expected", () =>{
     expect(validatePassword("s", "S")).toBe(false)
@@ -18,5 +18,15 @@ test("validate password works as expected", () =>{
     expect(validatePassword("Aa1Bb2Cc3", "Aa1Bb2Cc3")).toBe(true);
 
     
+
+})
+
+test("validate name works as expected", () =>{
+
+
+
+
+
+
 
 })
