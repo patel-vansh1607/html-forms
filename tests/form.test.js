@@ -16,18 +16,12 @@ test("validate password works as expected", () =>{
     expect(validatePassword("NoNumbersHere", "NoNumbersHere")).toBe(false); 
     expect(validatePassword("12345678", "12345678")).toBe(false); 
     expect(validatePassword("Aa1Bb2Cc3", "Aa1Bb2Cc3")).toBe(true);
-
-    
-
 })
 
 test("validate name works as expected", () =>{
-    // expect(validateNames("va", "ns")).toBe(false);
-    // expect(validateNames("Vansh", "Patel")).toBe(true);
-    expect(validateNames("Vansh1", "Vansh1")).toBe(false);
-
-
-
-
-
+    expect(validateNames("va", "ns")).toBe(false);
+    expect(validateNames("Vansh", "Patel")).toBe(true);
+    expect(validateNames("Vansh1", "Patel1")).toBe(false);
+    expect(validateNames("@", "@")).toBe(false);
+    expect(validateNames("VANSH", "patel")).toBe(true);
 })
