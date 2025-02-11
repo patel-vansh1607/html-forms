@@ -72,12 +72,12 @@ confirmPassword.addEventListener("change", (e) =>{
 })
 function validatePassword(password,confirmPassword){
     if (password===confirmPassword){
-        alert("Pass is Correct")
+        console.log("Pass is Correct")
     } else {
-        alert("Wrong pass")
+        console.log("Wrong pass")
     }
 }
-module.exports = validatePassword
+
 
 submitButton.addEventListener("click", (e) =>{
     console.log(details)
