@@ -5,5 +5,12 @@ function validatePassword(password,confirmPassword){
         return false;
     }
 }
+function validateNames(firstName, lastName){
+    //using test validate first name and last name are not less than 4 charactes
 
-module.exports = validatePassword
+}
+
+module.exports = {
+    validatePassword,
+    validateNames
+}
