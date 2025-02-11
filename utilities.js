@@ -6,7 +6,7 @@ function validatePassword(password,confirmPassword){
     }
 }
 function validateNames(firstName, lastName){
-    if (firstName.length <= 4 && lastName.length <= 4){
+    if (firstName.length <= 4 || lastName.length <= 4 || !/^[A-Za-z]+$/.test(firstName|| !/^[A-Za-z]+$/ .test(lastName) || firstName.length <=2 ||lastName.length<= 2)){
         return false
     } else {
         return true
