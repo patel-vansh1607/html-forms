@@ -1,4 +1,4 @@
-const {validatePassword,validateNames} = require("../utilities")
+const {validatePassword,validateNames, validateEmail} = require("../utilities")
 
 test("validate password works as expected", () =>{
     expect(validatePassword("s", "S")).toBe(false)
@@ -25,3 +25,13 @@ test("validate name works as expected", () =>{
     expect(validateNames("@", "@")).toBe(false);
     expect(validateNames("VANSH", "patel")).toBe(true);
 })
+
+
+
+test("validateEmail works as expected", () => {
+    expect(validateEmail("test@example.com")).toBe(true);
+    expect(validateEmail("test@example.c")).toBe(false);
+    expect(validateEmail("noproperformat")).toBe(false);
+    expect(validateEmail("test@example.co.uk")).toBe(true);
+    expect(validateEmail("test@example.domain.com")).toBe(true);
+});
