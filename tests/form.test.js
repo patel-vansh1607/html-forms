@@ -40,7 +40,9 @@ test("validate email works as expected", () => {
 test("validate number works as expected", () => {
     expect(validatePhoneNumber("+254712345678")).toBe(true);
     expect(validatePhoneNumber("0712345678")).toBe(true);
-
+    expect(validatePhoneNumber("0")).toBe(false);
+    expect(validatePhoneNumber("PhoneNumber")).toBe(false);
+    expect(validatePhoneNumber("345678909876543456789")).toBe(false);
 
 
 })
