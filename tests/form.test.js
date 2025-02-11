@@ -9,7 +9,7 @@ test("validate password works as expected", () =>{
     expect(validatePassword("Pass","")).toBe(false)
     expect(validatePassword("password1234","Password1234")).toBe(false)
     expect(validatePassword("PaSwORd2212345678","PaSwORd2212345678")).toBe(true)
-    expect(validatePassword("     ","     ")).toBe(true)
-    
-}
-)
+    expect(validatePassword("     ","     ")).toBe(false)
+
+
+})
