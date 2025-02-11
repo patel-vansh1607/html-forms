@@ -19,10 +19,16 @@ function validateEmail(email){
 
 }
 
+function validatePhoneNumber(phoneNumber){
+    const phoneRegex = /^(?:\+254|0)7\d{8}$/;
+    return phoneRegex.test(phoneNumber);
+
+}
+
 module.exports = {
     validatePassword,
     validateNames,
-    validateEmail
+    validateEmail,
+    validatePhoneNumber
 }
 
-// phone number and email
