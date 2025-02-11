@@ -1,7 +1,9 @@
 function validatePassword(password,confirmPassword){
     if (password===confirmPassword){
-        alert("Pass is Correct")
+        return true;
     } else {
-        alert("Wrong pass")
+        return false;
     }
 }
+
+module.exports = validatePassword
