@@ -89,7 +89,7 @@ submitButton.addEventListener("click", (e) =>{
 
 
    const validatePassword = validatePassword(password, confirmPassword)
-   if (validatePassword){
+   if (validatePassword && isNamesValidated && isPhoneNumberValidated && isEmailValidated){
         window.location.href = "./dashboard.html"
    } else {
     alertSpan.classList.remove("alert-off-message")
