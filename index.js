@@ -84,7 +84,7 @@ submitButton.addEventListener("click", (e) =>{
     const { firstName, lastName, email, password, confirmPassword, acceptTerms} = details
     console.log(firstName, lastName, email, password, confirmPassword, acceptTerms)
 
-   const IsValidated = validatePassword(password, confirmPassword)
+   const validatePassword = validatePassword(password, confirmPassword)
    if (validatePassword){
         window.location.href = "./dashboard.html"
    } else {
