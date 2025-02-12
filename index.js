@@ -71,32 +71,53 @@ confirmPassword.addEventListener("change", (e) =>{
     details.confirmPassword = confirmPassword
 })
 function validatePassword(password,confirmPassword){
-    if (password===confirmPassword){
-        console.log("Pass is Correct")
+    if (password===confirmPassword && password.length >= 4 && password!== "" && password.length != 0 && password.trim().length!==0 && /\d/.test(password) && /[a-zA-Z]/.test(password)){
+        return true;
     } else {
-        console.log("Wrong pass")
+        return false;
     }
+}
+function validateNames(firstName, lastName){
+    if (firstName.length <= 4 || lastName.length <= 4 || !/^[A-Za-z]+$/.test(firstName|| !/^[A-Za-z]+$/ .test(lastName) || firstName.length <=2 ||lastName.length<= 2)){
+        return false
+    } else {
+        return true
+    }
+
+}
+function validateEmail(email){
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+
+}
+
+function validatePhoneNumber(phoneNumber){
+    const phoneRegex = /^(?:\+254|0)7\d{8}$/;
+    return phoneRegex.test(phoneNumber);
+
 }
 
 
 submitButton.addEventListener("click", (e) =>{
-    console.log(details)
-    const { firstName, lastName, email, password, confirmPassword, acceptTerms} = details
-    console.log(firstName, lastName, email, password, confirmPassword, acceptTerms)
+    // console.log(details)
+    const { firstName, lastName, email, password, phoneNumber, confirmPassword, acceptTerms} = details
+    // console.log(firstName, lastName, email, password, confirmPassword, acceptTerms)
     const isNamesValidated = validateNames (firstName, lastName)
     const isPhoneNumberValidated = validatePhoneNumber (phoneNumber)
     const isEmailValidated = validateEmail (email)
 
 
-   const validatePassword = validatePassword(password, confirmPassword)
-   if (validatePassword && isNamesValidated && isPhoneNumberValidated && isEmailValidated){
+   const isPasswordValidated = validatePassword(password, confirmPassword)
+
+   if (isPasswordValidated && isNamesValidated && isPhoneNumberValidated && isEmailValidated){
         window.location.href = "./dashboard.html"
+        console.log(details)
+
    } else {
     alertSpan.classList.remove("alert-off-message")
     alertSpan.classList.add("alert-on-message")
    }
 
-    
 })
 
 
