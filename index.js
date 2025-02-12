@@ -99,9 +99,9 @@ function validatePhoneNumber(phoneNumber){
 
 
 submitButton.addEventListener("click", (e) =>{
-    // console.log(details)
+    console.log(details)
     const { firstName, lastName, email, password, phoneNumber, confirmPassword, acceptTerms} = details
-    // console.log(firstName, lastName, email, password, confirmPassword, acceptTerms)
+    console.log(firstName, lastName, email, password, confirmPassword, acceptTerms)
     const isNamesValidated = validateNames (firstName, lastName)
     const isPhoneNumberValidated = validatePhoneNumber (phoneNumber)
     const isEmailValidated = validateEmail (email)
