@@ -83,6 +83,10 @@ submitButton.addEventListener("click", (e) =>{
     console.log(details)
     const { firstName, lastName, email, password, confirmPassword, acceptTerms} = details
     console.log(firstName, lastName, email, password, confirmPassword, acceptTerms)
+    const isNamesValidated = validateNames (firstName, lastName)
+    const isPhoneNumberValidated = validatePhoneNumber (phoneNumber)
+    const isEmailValidated = validateEmail (email)
+
 
    const validatePassword = validatePassword(password, confirmPassword)
    if (validatePassword){
