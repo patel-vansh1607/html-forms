@@ -4,3 +4,4 @@ document.querySelectorAll('.menu li').forEach(item => {
         item.classList.add('active');
     });
 });
+
