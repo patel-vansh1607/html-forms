@@ -118,7 +118,10 @@ submitButton.addEventListener("click", (e) =>{
     alertSpan.classList.remove("alert-off-message")
     alertSpan.classList.add("alert-on-message")
    }
-
+   setTimeout(() => {
+    alertSpan.classList.remove("alert-on-message");
+    alertSpan.classList.add("alert-off-message");
+}, 5000);
 })
 
 // DOM api
