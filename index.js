@@ -121,5 +121,7 @@ submitButton.addEventListener("click", (e) =>{
 
 })
 
-
+// DOM api
+// rest api
+// 
 
